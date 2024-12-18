@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = "http://localhost:5001/posts";  // Fixed the URL
+const url = "https://memorynest.onrender.com/posts";  // Fixed the URL
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
