@@ -23,6 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "postinstall": "chmod +x ./node_modules/.bin/react-scripts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   }
