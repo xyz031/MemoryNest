@@ -18,13 +18,15 @@ function App() {
 
     return (
         <>
-            <Container maxWidth='lg'>
-                <AppBar className={classes.appBar} position='static' color='inherit'>
-                    <img className={classes.image} src={memories} alt="memories" height='60' />
-                    <Typography className={classes.heading} variant='h2' align='center'>
-                    MemoryNest
-                    </Typography>
-                </AppBar>
+            <Container maxWidth='xl'>
+            <AppBar className={classes.appBar} position="static" color="inherit">
+    <div className={classes.brandContainer}>
+        <img className={classes.image} src={memories} alt="memories" height="50" />
+        <Typography className={classes.heading} variant="h4" align="center">
+            Memory<span style={{ color: '#3f51b5' }}>Nest</span>
+        </Typography>
+    </div>
+</AppBar>
                 <Grow in>
                     <Container>
                         <Grid
